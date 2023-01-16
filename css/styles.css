@@ -126,11 +126,10 @@ img {
 .site-nav .link:focus,
 .auth-nav .link:hover,
 .auth-nav .link:focus,
-.footer .link:focus,
-.footer .link:hover {
+.address-link .link:hover,
+.address-link .link:focus {
   color: var(--accent-color);
 }
-
 .auth-nav {
   display: flex;
   margin-left: auto;
@@ -151,7 +150,7 @@ img {
 .hero {
   color: var(--light-text-color);
   text-align: center;
-  background-color: #2f303a;
+  background-color: var(--bg-color);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -181,23 +180,18 @@ img {
   border: none;
   min-width: 216px;
   text-align: center;
+  cursor: pointer;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: #188ce8;
 }
-/* .hero.button:hover,
-.hero.button:focus {
-    background-color: #......; 
-} */
-
 .advantages {
   font-size: 14px;
   padding-bottom: 0;
 }
-
-ul.advantages-list {
+.advantages-list {
   display: flex;
   gap: 30px;
   padding: 0;
@@ -229,24 +223,27 @@ ul.advantages-list {
   margin-bottom: 10px;
   color: var(--dark-text-color);
 }
-
-.advantages p {
+.advantages-text {
   line-height: 1.71;
+  color: #757575;
 }
-
-h2 {
+.h2 {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
 }
 
 .title {
-  line-height: 19px;
+  line-height: 1.17;
   color: var(--dark-text-color);
   margin-bottom: 50px;
   text-align: center;
 }
 
+.portfolio-item-title {
+  font-size: 16px;
+  color: #757575;
+}
 /* .align-center {
   text-align: center;
 } */
@@ -286,13 +283,18 @@ h2 {
 div.team-member-description {
   line-height: 1.19;
   padding: 30px 10px;
+  color: #757575;
 }
-
+.portfolio-description {
+  line-height: 1.88;
+  color: var(--medium-text-color);
+}
 .team-member-title {
   line-height: 1.19;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
+  color: #212121;
 }
 
 .portfolio {
@@ -345,17 +347,12 @@ div.team-member-description {
   border: 1px solid #eeeeee;
 }
 
-.portfolio p {
-  line-height: 1.88;
-  color: var(--medium-text-color);
-}
-
 .logo-white-secondpart {
   color: var(--light-text-color);
 }
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--bg-color);
   padding: 60px 0;
 }
 
@@ -367,6 +364,7 @@ div.team-member-description {
 .footer .address {
   font-size: 14px;
   line-height: 1.71;
+  margin-bottom: 9px;
   font-style: normal;
 }
 
