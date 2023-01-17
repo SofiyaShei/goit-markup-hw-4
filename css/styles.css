@@ -90,7 +90,6 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .menu-container {
@@ -125,9 +124,7 @@ img {
 .site-nav .link:hover,
 .site-nav .link:focus,
 .auth-nav .link:hover,
-.auth-nav .link:focus,
-.address-link .link:hover,
-.address-link .link:focus {
+.auth-nav .link:focus {
   color: var(--accent-color);
 }
 .auth-nav {
@@ -136,7 +133,7 @@ img {
 }
 
 .auth-nav .link {
-  color: #757575;
+  color: var(--medium-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -146,7 +143,6 @@ img {
 .auth-nav .item + .item {
   margin-left: 50px;
 }
-
 .hero {
   color: var(--light-text-color);
   text-align: center;
@@ -162,7 +158,6 @@ img {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-
 .hero-title {
   text-align: center;
   font-size: 44px;
@@ -233,7 +228,7 @@ img {
 }
 .advantages-text {
   line-height: 1.71;
-  color: #757575;
+  color: var(--medium-text-color);
 }
 .h2 {
   font-size: 36px;
@@ -243,6 +238,7 @@ img {
 
 .title {
   line-height: 1.17;
+  font-size: 36px;
   color: var(--dark-text-color);
   margin-bottom: 50px;
   text-align: center;
@@ -250,7 +246,7 @@ img {
 
 .portfolio-item-title {
   font-size: 16px;
-  color: #757575;
+  color: var(--medium-text-color);
 }
 /* .align-center {
   text-align: center;
@@ -275,7 +271,6 @@ img {
 }
 
 .team-list {
-  line-height: 1.19;
   display: flex;
   gap: 30px;
 }
@@ -287,15 +282,6 @@ img {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
-.member-soc-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.soc-item {
-  width: 44px;
-  height: 42px;
-}
 .team-member-soc {
   width: 100%;
   height: 100%;
@@ -306,9 +292,11 @@ img {
 }
 
 div.team-member-description {
-  line-height: 1.19;
   padding: 30px 10px;
-  color: #757575;
+}
+.team-member-position {
+  color: var(--medium-text-color);
+  line-height: 1.19;
 }
 .portfolio-description {
   line-height: 1.88;
@@ -319,7 +307,7 @@ div.team-member-description {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
-  color: #212121;
+  color: var(--dark-text-color);
 }
 
 .portfolio {
@@ -389,10 +377,13 @@ div.team-member-description {
 .footer .address {
   font-size: 14px;
   line-height: 1.71;
-  margin-bottom: 9px;
   font-style: normal;
 }
-
+.address-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
 .address-item:not(:nth-last-child(n)) {
   margin-bottom: 9px;
   gap: 9px;
@@ -430,4 +421,8 @@ div.team-member-description {
 .button.secondary:focus {
   color: var(--light-text-color);
   background-color: var(--accent-color);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
 }
