@@ -130,14 +130,21 @@ img {
 .auth-nav {
   display: flex;
   margin-left: auto;
+  align-items: center;
+  justify-content: center;
 }
-
+.auth-nav-icon {
+  display: inline;
+  margin-right: 10px;
+}
 .auth-nav .link {
   color: var(--medium-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  align-items: center;
+  justify-content: center;
 }
 
 .auth-nav .item + .item {
@@ -212,11 +219,18 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+.advantages-container {
+  display: inline-flex;
+  flex-direction: row;
+}
 
+.cont-icons {
+  background-color: #f5f4fa;
+  border-radius: 3px;
+}
 .advantages-item {
   flex-basis: calc((100%-90px) / 4);
 }
-
 .advantages-title {
   font-weight: 700;
   font-size: 14px;
