@@ -282,13 +282,23 @@ img {
   border-radius: 0px 0px 4px 4px;
   text-align: center;
 }
+.member-soc-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.soc-item {
+  width: 44px;
+  height: 42px;
+}
 .team-member-soc {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: var(--dark-text-color);
+  background-color: var(--medium-text-color);
   display: block;
   margin-top: 16px;
+  margin-bottom: 30px;
 }
 
 div.team-member-description {
