@@ -219,14 +219,18 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
-.advantages-container {
-  display: inline-flex;
-  flex-direction: row;
+.icons-container {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .cont-icons {
-  background-color: #f5f4fa;
-  border-radius: 3px;
 }
 .advantages-item {
   flex-basis: calc((100%-90px) / 4);
