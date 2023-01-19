@@ -16,6 +16,7 @@ html {
   --accent-color: #2196f3;
   --light-background-color: #f5f5f5;
   --main-font: "Roboto", sans-serif;
+  --primary-icon-color: #afb1b8;
 }
 
 body {
@@ -136,6 +137,7 @@ img {
 .auth-nav-icon {
   display: inline;
   margin-right: 10px;
+  fill: var(--medium-text-color);
 }
 .auth-nav .link {
   color: var(--medium-text-color);
@@ -229,9 +231,6 @@ img {
   align-items: center;
   margin-bottom: 30px;
 }
-
-.cont-icons {
-}
 .advantages-item {
   flex-basis: calc((100%-90px) / 4);
 }
@@ -261,7 +260,44 @@ img {
   margin-bottom: 50px;
   text-align: center;
 }
+.clients-list {
+  display: flex;
+  height: 92px;
+  gap: 30px;
+}
 
+.clients-item {
+  display: flex;
+  width: calc((100%-150) / 6);
+  height: 92px;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--primary-icon-color);
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-icon {
+  fill: var(--primary-icon-color);
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  fill: var(--accent-color);
+}
+.clients-link:hover,
+.clients-link:focus {
+  border: 1px solid var(--accent-color);
+}
 .portfolio-item-title {
   font-size: 16px;
   color: var(--medium-text-color);
@@ -306,6 +342,7 @@ img {
   gap: 10px;
 }
 .soc-item {
+  fill: var(--medium-text-color);
   width: 44px;
   height: 42px;
 }
@@ -314,11 +351,11 @@ img {
   height: 100%;
   border-radius: 50%;
   background-color: var(--light-text-color);
-  display: block;
   margin-top: 16px;
   margin-bottom: 30px;
   display: flex;
   align-items: center;
+  fill: var(--medium-text-color);
   justify-content: center;
 }
 
@@ -426,7 +463,39 @@ div.team-member-description {
 .footer .address-link {
   color: rgba(255, 255, 255, 0.6);
 }
-
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.footer-section:first-child {
+  margin-right: 70px;
+}
+.invitation {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+}
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--light-text-color);
+}
 /* buttons */
 .button {
   color: var(--dark-text-color);
