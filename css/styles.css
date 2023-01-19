@@ -134,7 +134,7 @@ img {
   align-items: center;
   justify-content: center;
 }
-.auth-nav-icon {
+.address-icon {
   display: inline;
   margin-right: 10px;
   fill: var(--medium-text-color);
@@ -151,6 +151,10 @@ img {
 
 .auth-nav .item + .item {
   margin-left: 50px;
+}
+.auth-nav-link:hover .address-icon,
+.auth-nav-link:focus .address-icon {
+  fill: var(--accent-color);
 }
 .hero {
   color: var(--light-text-color);
@@ -342,11 +346,10 @@ img {
   gap: 10px;
 }
 .soc-item {
-  fill: var(--medium-text-color);
   width: 44px;
   height: 42px;
 }
-.team-member-soc {
+.team-soc-link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
@@ -355,10 +358,20 @@ img {
   margin-bottom: 30px;
   display: flex;
   align-items: center;
-  fill: var(--medium-text-color);
   justify-content: center;
+  fill: var(--primary-icon-color);
 }
 
+.team-soc-link:hover,
+.team-soc-link:focus,
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--light-text-color);
+}
 div.team-member-description {
   padding: 30px 10px;
 }
@@ -398,13 +411,26 @@ div.team-member-description {
   border-radius: 4px;
   min-width: 73px;
 }
-
+.portfolio-button:hover,
+.portfolio-button:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
-
+.portfolio-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.portfolio-link:hover,
+.portfolio-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
 }
@@ -463,14 +489,12 @@ div.team-member-description {
 .footer .address-link {
   color: rgba(255, 255, 255, 0.6);
 }
+
 .footer-container {
   display: flex;
-  flex-direction: row;
   align-items: baseline;
 }
-.footer-section:first-child {
-  margin-right: 70px;
-}
+
 .invitation {
   font-weight: 700;
   font-size: 14px;
@@ -479,6 +503,7 @@ div.team-member-description {
   text-transform: uppercase;
   color: var(--light-text-color);
 }
+
 .footer-soc-list {
   display: flex;
   align-items: center;
@@ -486,6 +511,7 @@ div.team-member-description {
   margin-top: 20px;
   gap: 10px;
 }
+
 .footer-soc-link {
   width: 44px;
   height: 44px;
@@ -520,11 +546,4 @@ div.team-member-description {
 .button.secondary:focus {
   color: var(--light-text-color);
   background-color: var(--accent-color);
-}
-.address-link:hover,
-.address-link:focus {
-  color: var(--accent-color);
-}
-.member-soc-list:hover,
-.member-soc-list:focus {
 }
