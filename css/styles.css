@@ -489,12 +489,12 @@ div.team-member-description {
 .footer .address-link {
   color: rgba(255, 255, 255, 0.6);
 }
-
-.footer-container {
+.footer-flex {
   display: flex;
+  padding-top: 48px;
+  padding-bottom: 28px;
   align-items: baseline;
 }
-
 .invitation {
   font-weight: 700;
   font-size: 14px;
@@ -503,7 +503,6 @@ div.team-member-description {
   text-transform: uppercase;
   color: var(--light-text-color);
 }
-
 .footer-soc-list {
   display: flex;
   align-items: center;
