@@ -150,7 +150,7 @@ img {
 }
 
 .auth-nav .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .auth-nav-link:hover .address-icon,
 .auth-nav-link:focus .address-icon {
@@ -170,6 +170,8 @@ img {
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  max-width: 1600;
+  margin: 0 auto;
 }
 .hero-title {
   text-align: center;
@@ -264,24 +266,19 @@ img {
   margin-bottom: 50px;
   text-align: center;
 }
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .clients-list {
   display: flex;
   height: 92px;
   gap: 30px;
 }
-
-.clients-item {
-  display: flex;
-  width: calc((100%-150) / 6);
-  height: 92px;
-  align-items: center;
-  justify-content: center;
-}
-
 .clients-link {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 92px;
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
   justify-content: center;
@@ -347,15 +344,13 @@ img {
 }
 .soc-item {
   width: 44px;
-  height: 42px;
+  height: 44px;
 }
 .team-soc-link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
   background-color: var(--light-text-color);
-  margin-top: 16px;
-  margin-bottom: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -378,6 +373,7 @@ div.team-member-description {
 .team-member-position {
   color: var(--medium-text-color);
   line-height: 1.19;
+  margin-bottom: 16px;
 }
 .portfolio-description {
   line-height: 1.88;
@@ -460,7 +456,6 @@ div.team-member-description {
 
 .footer {
   background-color: var(--bg-color);
-  padding: 60px 0;
 }
 
 .footer .logo {
@@ -489,11 +484,15 @@ div.team-member-description {
 .footer .address-link {
   color: rgba(255, 255, 255, 0.6);
 }
-.footer-flex {
+.container-footer-flex {
   display: flex;
   padding-top: 48px;
   padding-bottom: 28px;
   align-items: baseline;
+}
+
+.footer-address {
+  margin-right: 70px;
 }
 .invitation {
   font-weight: 700;
