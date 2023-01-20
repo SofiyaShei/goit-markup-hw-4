@@ -363,8 +363,8 @@ img {
 .footer-soc-link:focus {
   background-color: var(--accent-color);
 }
-.team-soc-link:hover .team-soc-icon,
-.team-soc-link:focus .team-soc-icon {
+.team-soc-link:hover,
+.team-soc-link:focus {
   fill: var(--light-text-color);
 }
 div.team-member-description {
@@ -458,7 +458,11 @@ div.team-member-description {
   background-color: var(--bg-color);
 }
 
-.footer .logo {
+.logo-footer {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
   display: inline-block;
   margin-bottom: 20px;
 }
@@ -488,9 +492,9 @@ div.team-member-description {
   display: flex;
   padding-top: 48px;
   padding-bottom: 28px;
+  padding-left: 215px;
   align-items: baseline;
 }
-
 .footer-address {
   margin-right: 70px;
 }
@@ -544,4 +548,8 @@ div.team-member-description {
 .button.secondary:focus {
   color: var(--light-text-color);
   background-color: var(--accent-color);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
 }
