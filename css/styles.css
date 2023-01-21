@@ -170,7 +170,7 @@ img {
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
-  max-width: 1600;
+  max-width: 1600px;
   margin: 0 auto;
 }
 .hero-title {
@@ -490,13 +490,17 @@ div.team-member-description {
 }
 .container-footer-flex {
   display: flex;
-  padding-top: 48px;
-  padding-bottom: 28px;
-  padding-left: 215px;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
   align-items: baseline;
 }
 .footer-address {
   margin-right: 70px;
+}
+.footer-invitation {
+  margin: 93px;
 }
 .invitation {
   font-weight: 700;
