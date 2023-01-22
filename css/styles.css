@@ -455,6 +455,7 @@ div.team-member-description {
 }
 
 .footer {
+  padding: 60px 0;
   background-color: var(--bg-color);
 }
 
@@ -498,9 +499,6 @@ div.team-member-description {
 }
 .footer-address {
   margin-right: 70px;
-}
-.footer-invitation {
-  margin: 93px;
 }
 .invitation {
   font-weight: 700;
